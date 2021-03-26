@@ -1,2 +1,2 @@
-# leet-code-php
-leet-code解题for php
+# leet-code
+leet-code解题
