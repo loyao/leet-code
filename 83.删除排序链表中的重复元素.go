@@ -14,14 +14,15 @@
  */
 func deleteDuplicates(head *ListNode) *ListNode {
 	if head == nil || head.Next == nil {
-        return head 
-    }
+		return head
+	}
 
-	head.Next  = deleteDuplicates(head.Next) 
-	if head.Val == head.Next.Val {//结构体循环调用                    
-        head = head.Next                  
-    }
+	head.Next = deleteDuplicates(head.Next)
+	if head.Val == head.Next.Val { //结构体循环调用
+		head = head.Next
+	}
 	return head
 }
+
 // @lc code=end
 
